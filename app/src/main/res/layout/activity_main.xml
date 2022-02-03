@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/underlineAppName"
+        android:textSize="40sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="36dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/search"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:text="Search"
+        android:textColor="@color/splash"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:background="@drawable/button"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/splash"
+        android:id="@+id/quick_search"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:text="Quick Search"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:background="@drawable/button"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/splash"
+        android:id="@+id/my_list_button"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:text="My List"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quick_search"
+        android:background="@drawable/button"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:textColor="@color/splash"
+        android:id="@+id/info"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:text="About"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_list_button"
+        android:background="@drawable/button"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
